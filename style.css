@@ -1,19 +1,90 @@
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: helvetica, arial, sans-serif;
+    font-family: 'Bree Serif', serif;
+
   margin: 2em;
+  background-image: url("https://cdn.glitch.com/2e6655bc-12ba-4a49-8d04-c70cec11c59e%2Frules.jpg?v=1605065995280")
 }
 
 h1 {
   font-style: italic;
   color: #373fff;
 }
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+
+* {
+  box-sizing: border-box;
 }
-th, td {
-  padding: 5px;
-  text-align: left;    
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 60px;
+  height: 200px
+  
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.redbox {
+  background-color: red;
+  padding: 50px; 
+}
+.greenbox {
+  background-color: green; 
+}
+.bluebox {
+  background-color: blue;
+}
+.yellowbox {
+  background-color: yellow;
+  border: 3px solid black;
+}
+.purplebox {font-family: monospace;
+  background-color: purple;
+  
+}
+.pinkbox {
+  background-color: pink;
+  border: 3px solid red;
+}
+
+.blackbox {
+  background-color: black;
+  border: 3px solid black;
+}
+
+.threecol {
+  width: 33.33%
+}
+.twocol {
+  width: 50%
+}
+.onecol {
+  width: 100%
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .threecol, .twocol, .onecol {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+a { 
+  text-decoration: none; 
+    color: blue;
+}
+
+a:hover {
+  color:purple;
+}
+
+img {
+  width: 100%; 
 }
