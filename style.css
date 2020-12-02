@@ -1,15 +1,15 @@
 /* CSS files add styling rules to your content */
 
 body {
-    font-family: 'Bree Serif', serif;
+    font-family: 'Raleway', sans-serif;
 
-  margin: 2em;
-  background-image: url("https://cdn.glitch.com/2e6655bc-12ba-4a49-8d04-c70cec11c59e%2Frules.jpg?v=1605065995280")
+    background-color: white;
 }
 
+
 h1 {
-  font-style: italic;
-  color: #373fff;
+  font-style: normal;
+  color: black;
 }
 
 * {
@@ -19,9 +19,8 @@ h1 {
 .box {
   float: left;
   width: 33.33%;
-  padding: 60px;
-  height: 200px
-  
+  padding: 50px;
+  height: 300px
 }
 
 .clearfix::after {
@@ -56,9 +55,13 @@ h1 {
 
 .blackbox {
   background-color: black;
-  border: 3px solid black;
+  border: 3px solid white;
 }
 
+.whitebox {
+  background-color: white;
+  border: none;
+}
 .threecol {
   width: 33.33%
 }
@@ -69,22 +72,128 @@ h1 {
   width: 100%
 }
 
-/* Use a media query to add a break point at 800px: */
-@media screen and (max-width:800px) {
-  .threecol, .twocol, .onecol {
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-}
-
 a { 
   text-decoration: none; 
     color: blue;
 }
 
 a:hover {
-  color:purple;
+  color:red;
 }
 
-img {
-  width: 100%; 
+.center {
+  text-align: center;
 }
+
+.center2 {
+      text-align: center;
+    }
+
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: show;
+      background-color: #333;
+    }
+
+    li {
+      float: right;
+    }
+
+    li a {
+      display: inline-block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: "Heebo", sans-serif;
+    }
+
+    li a:hover {
+      background-color: none;
+    }
+
+    .active {
+      background-color: none;
+    }
+
+img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+* {
+        box-sizing: border-box;
+      }
+
+      .row {
+        display: -ms-flexbox; /* IE 10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE 10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      /* Create two equal columns that sits next to each other */
+      .column {
+        -ms-flex: 50%; /* IE 10 */
+        flex: 50%;
+        padding: 0 4px;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+
+
+    <style>
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+/* index.html header and image grid */
+* {
+  box-sizing: border-box;
+  
+}
+
+.column {
+  float: middle;
+  width: 33.33%;
+  padding: 10px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+div.a {
+  text-align: center;
+}
+
+div.b {
+  text-align: left;
+}
+
+div.c {
+  text-align: right;
+} 
+
+div.d {
+  text-align: justify;
+} 
+
