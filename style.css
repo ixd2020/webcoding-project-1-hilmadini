@@ -278,16 +278,23 @@ h7 {
   
 }
 
+h8 {
+  font-family: 'Archivo Black', sans-serif;
+  text-align: center;
+  font-size:25px;
+  padding-top: 20px;
+  
+}
 
 footer {
   font-family: 'Courier Prime', monospace;
   font-size:15px;
-  text-align:left;
-  background-color:#e0bbe4;
+  text-align:center;
+  background-color:white;
   height: 40px;
-  
- 
+  font-size: 15px;
 }
+
 
 p {
   font-family: 'Courier Prime', monospace;
@@ -340,4 +347,10 @@ hr.solid {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+p1 {
+  text-align: left;
+  font-size: 17px;
+  padding-top:50px;
 }
